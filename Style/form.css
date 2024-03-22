@@ -1,0 +1,100 @@
+h2 {
+	text-align: center;
+}
+
+.mainSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+}
+
+.mainBody {
+	border: 1px solid #ddd;
+	width: 540px;
+	padding: 23px;
+	border-radius: 25px;
+	display: flex;
+}
+
+.first {
+	display: flex;
+}
+
+.first input {
+	margin-left: 40px;
+}
+
+.error {
+	color: red;
+}
+
+.second {
+	display: flex;
+	align-items: center;
+}
+
+.second input {
+	margin-left: 44px;
+}
+
+.third {
+	display: flex;
+	align-items: center;
+}
+
+.third textarea {
+	margin-left: 63px;
+}
+
+.fourth {
+	display: flex;
+	align-items: center;
+}
+
+.fourth input {
+	margin-left: 16px;
+}
+
+.fifth {
+	display: flex;
+	align-items: center;
+}
+
+.fifth input {
+	margin-left: 61px;
+}
+
+.sixth {
+	display: flex;
+	align-items: center;
+}
+
+.sixth input {
+	margin-left: 61px;
+}
+
+.seventh {
+	display: flex;
+	align-items: center;
+}
+
+.seventh input {
+	margin-left: 5px;
+}
+
+.buttonSet {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.main span {
+	margin-left: 20px;
+}

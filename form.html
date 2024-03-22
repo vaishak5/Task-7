@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="./Jquery/form.js"></script>
+      <link rel="stylesheet" href="./Style/form.css">
+      <title>Form Validation</title>
+   </head>
+   <body>
+      <div class="body">
+         <h2>Form Validation</h2>
+         <div class="mainSection">
+            <div class="mainBody">
+               <div class="main">
+                  <div class="first">
+                     <label for="firstname">First Name:</label>
+                     <input type="text" id="firstname" onkeypress="return (event.charCode >=65 && event.charCode <=91) || (event.charCode >=97 && event.charCode <=122)">
+                     <div class="errorFirst">
+                        <span id="firstnameError" class="error"></span><br>
+                     </div>
+                  </div>
+                  <div class="second">
+                     <label for="lastname">Last Name:</label>
+                     <input type="text" id="lastname" onkeypress="return (event.charCode >=65 && event.charCode <=91) || (event.charCode >=97 && event.charCode <=122)">
+                     <span id="lastnameError" class="error"></span><br>
+                  </div>
+                  <div class="third">
+                     <label for="address">Address:</label>
+                     <textarea id="address" name="address" rows="3" cols="21"></textarea>
+                     <span id="addressError" class="error"></span><br>
+                  </div>
+                  <div class="fourth">
+                     <label for="mobile">Mobile Number:</label>
+                     <input type=text id="mobile" maxlength="10" onkeypress="return (event.charCode >47 && event.charCode < 59)">
+                     <span id="mobileError" class="error"></span><br>
+                  </div>
+                  <div class="fifth">
+                     <label for="email">Email ID:</label>
+                     <input type="text" id="email" name="email">
+                     <span id="emailError" class="error"></span><br>
+                  </div>
+                  <div class="sixth">
+                     <label for="password">Password:</label>
+                     <input type="password" id="password" name="password">
+                     <span id="passwordError" class="error"></span><br>
+                  </div>
+                  <div class="seventh">
+                     <label for="confirmPassword">Confirm Password:</label>
+                     <input type="password" id="confirmPassword" name="confirmPassword">
+                     <span id="confirmPasswordError" class="error"></span><br><br>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="buttonSet">
+         <button type="button" onclick="validateForm()">Submit</button>
+      </div>
+      <p id="formDetails"></p>
+   </body>
+</html>
